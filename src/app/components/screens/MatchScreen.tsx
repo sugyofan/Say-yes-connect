@@ -1,6 +1,6 @@
 import { ScreenShell } from "../ScreenShell";
 import { motion } from "motion/react";
-import appIcon from "figma:asset/566ca345ea51bf3e951e33fb0dae721ad0e0813c.png";
+import appIcon from "../../../assets/566ca345ea51bf3e951e33fb0dae721ad0e0813c.png";
 
 interface Props {
   onNext: () => void;
