@@ -6,6 +6,7 @@ import { QuestionScreen } from "./components/screens/QuestionScreen";
 import { ProfilePreviewScreen } from "./components/screens/ProfilePreviewScreen";
 import { IntentionalPauseScreen } from "./components/screens/IntentionalPauseScreen";
 import { MatchScreen } from "./components/screens/MatchScreen";
+import { CourageMomentScreen } from "./components/screens/CourageMomentScreen";
 import { FinalScreen } from "./components/screens/FinalScreen";
 
 const SCREENS = [
@@ -18,6 +19,7 @@ const SCREENS = [
   "profile-preview",
   "intentional-pause",
   "match",
+  "courage-moment",
   "final",
 ] as const;
 
@@ -120,6 +122,9 @@ export default function App() {
         )}
         {currentScreen === "match" && (
           <MatchScreen key="match" onNext={nextScreen} />
+        )}
+        {currentScreen === "courage-moment" && (
+          <CourageMomentScreen key="courage-moment" onNext={nextScreen} />
         )}
         {currentScreen === "final" && <FinalScreen key="final" />}
       </AnimatePresence>

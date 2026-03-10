@@ -1,6 +1,6 @@
 import { ScreenShell } from "../ScreenShell";
 import { motion } from "motion/react";
-import appIcon from "../../../assets/566ca345ea51bf3e951e33fb0dae721ad0e0813c.png";
+import appIcon from "../../../assets/say-yes_logo.png";
 
 interface Props {
   onNext: () => void;
@@ -13,7 +13,7 @@ export function OpeningScreen({ onNext }: Props) {
         <motion.img
           src={appIcon}
           alt="SayYes Connect"
-          className="w-20 h-20 rounded-2xl mb-8 shadow-lg"
+          className="w-40 h-40 rounded-2xl"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}

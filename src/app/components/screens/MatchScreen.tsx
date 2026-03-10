@@ -1,6 +1,6 @@
 import { ScreenShell } from "../ScreenShell";
 import { motion } from "motion/react";
-import appIcon from "../../../assets/566ca345ea51bf3e951e33fb0dae721ad0e0813c.png";
+import appIcon from "../../../assets/say-yes_logo.png";
 
 interface Props {
   onNext: () => void;
@@ -13,7 +13,7 @@ export function MatchScreen({ onNext }: Props) {
         <motion.img
           src={appIcon}
           alt="SayYes"
-          className="w-16 h-16 rounded-xl mb-8 opacity-60"
+          className="w-40 h-40 rounded-xl opacity-60"
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 0.6 }}
           transition={{ delay: 0.3, duration: 0.8 }}

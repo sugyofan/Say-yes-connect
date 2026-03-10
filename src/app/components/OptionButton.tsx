@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 interface OptionButtonProps {
   label: string;
   selected?: boolean;

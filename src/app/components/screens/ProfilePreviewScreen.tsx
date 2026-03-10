@@ -41,14 +41,15 @@ export function ProfilePreviewScreen({ onNext }: Props) {
             {photoRevealed && (
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 200 }}
+                animate={{ opacity: 1, height: 280 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
                 className="overflow-hidden"
               >
                 <img
                   src={PROFILE_PHOTO}
                   alt="Rachel"
-                  className="w-full h-[200px] object-cover object-top"
+                  className="w-full h-[280px] object-cover"
+                  style={{ objectPosition: "center 15%" }}
                 />
               </motion.div>
             )}
