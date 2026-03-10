@@ -40,10 +40,9 @@ export function ProfilePreviewScreen({ onNext }: Props) {
           <AnimatePresence>
             {photoRevealed && (
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ clipPath: "inset(0 0 100% 0)", opacity: 0 }}
+                animate={{ clipPath: "inset(0 0 0% 0)", opacity: 1 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
-                className="overflow-hidden"
               >
                 <img
                   src={PROFILE_PHOTO}
