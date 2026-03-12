@@ -12,7 +12,7 @@ export function MatchScreen({ onNext }: Props) {
       <div className="flex-1 flex flex-col items-center justify-center px-10 text-center">
         <motion.img
           src={appIcon}
-          alt="SayYes"
+          alt="SayYes Connect"
           className="w-40 h-40 rounded-xl opacity-60"
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 0.6 }}

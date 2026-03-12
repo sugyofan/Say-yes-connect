@@ -19,22 +19,22 @@ export function OpeningScreen({ onNext }: Props) {
           transition={{ delay: 0.3, duration: 0.8 }}
         />
         <motion.h1
-          className="text-[#f5e6d8] mb-3"
-          style={{ fontFamily: "'Playfair Display', serif", fontSize: "3rem", lineHeight: 1.1 }}
+          className="text-[#f5e6d8] mb-2"
+          style={{ fontFamily: "'Playfair Display', serif", fontSize: "2.2rem", lineHeight: 1.1 }}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          Say Yes.
+          SayYes Connect
         </motion.h1>
         <motion.p
           className="text-[#d4b8a0] mb-2"
-          style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.15rem", fontStyle: "italic" }}
+          style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontStyle: "italic", lineHeight: 1.4 }}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          True Connection. True Love.
+          Say Yes. True Connection. True Love.
         </motion.p>
         <motion.p
           className="text-[#b8a090] mt-12"

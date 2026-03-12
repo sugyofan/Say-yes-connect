@@ -69,7 +69,7 @@ export function QuestionScreen({ headline, options, footer, onNext }: Props) {
             letterSpacing: "0.04em",
           }}
         >
-          Next &rsaquo;
+          Continue &rsaquo;
         </button>
       </motion.div>
     </ScreenShell>
